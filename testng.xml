@@ -2,6 +2,14 @@
 
 <suite name="DemoBlaze Suite" parallel="tests" thread-count="3">
 
+    <listeners>
+        <listener class-name="utils.TestListener"/>
+
+
+            </listeners>
+
+
+
     <test name="Product Tests">
         <classes>
             <class name="tests.ProductTests"/>
@@ -21,3 +29,4 @@
     </test>
 
 </suite>
+
