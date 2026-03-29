@@ -11,10 +11,11 @@ import utils.DriverManager;
 public class CartTests extends BaseTest {
 
     @Test
-    public void verifyAddToCart() {
+    public void verifyAddToCart() throws InterruptedException {
 
         HomePage home = new HomePage(DriverManager.getDriver());
         home.clickCategory("Phones");
+        Thread.sleep(2000);
         home.clickProduct("Samsung galaxy s6");
 
         ProductPage product = new ProductPage(DriverManager.getDriver());
