@@ -14,7 +14,9 @@ public class ProductTests extends BaseTest {
 
         HomePage home = new HomePage(DriverManager.getDriver());
         home.clickCategory("Phones");
+
         Thread.sleep(2000);
+
         home.clickProduct("Samsung galaxy s6");
 
         ProductPage product = new ProductPage(DriverManager.getDriver());
@@ -27,14 +29,20 @@ public class ProductTests extends BaseTest {
     }
 
     @Test
-    public void addProductToCart() {
+    public void addProductToCart() throws InterruptedException {
 
         HomePage home = new HomePage(DriverManager.getDriver());
         home.clickCategory("Phones");
+
+        Thread.sleep(2000);
+
         home.clickProduct("Samsung galaxy s6");
 
         ProductPage product = new ProductPage(DriverManager.getDriver());
         product.clickAddToCart();
+
+        Thread.sleep(2000);
+
         product.handleAlert();
     }
 }
