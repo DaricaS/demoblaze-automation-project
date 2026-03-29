@@ -30,6 +30,7 @@ src
 - Selenium
 - TestNG
 - Maven
+- GitHub
 
 ## How to Run Tests
 
