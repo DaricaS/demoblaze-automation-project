@@ -24,7 +24,7 @@ public class ProductTests extends BaseTest {
         String title = product.getProductTitle();
         String price = product.getProductPrice();
 
-        Assert.assertTrue(title.contains("Samsung"));
+        Assert.assertTrue(title.contains("Samsung galaxy"));
         Assert.assertTrue(price.contains("$"));
     }
 
